@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Customer Analytics & Segmentation | Sam Moses Kumar</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Transactional database analysis, customer clustering, cohort analysis, and Power BI reporting.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+</head>
+<body class="dark-mode-enforced project-page">
+
+    <header class="project-hero reveal-up" style="background: linear-gradient(180deg, rgba(17, 17, 16, 0.4) 0%, rgba(10, 10, 9, 0.95) 100%), url('../images/ecommerce_customer_analytics.png') no-repeat center center; background-size: cover;">
+        <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+        <div class="hero-content">
+            <span class="project-category">Data Analytics • Business Intelligence</span>
+            <h1 class="project-hero-title">eCommerce Customer Analytics & Segmentation</h1>
+            <p class="project-hero-sub">Uncovering customer purchasing behaviour, lifetime value, and marketing segments.</p>
+        </div>
+    </header>
+
+    <section class="project-details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="details-left reveal-up">
+                    <h2 class="project-section-heading">Business Problem</h2>
+                    <div class="project-description">
+                        <p>With thousands of online orders, businesses struggle to make sense of individual buying behaviors. Treating all customers equally leads to sub-optimal marketing spends, low user retention, and missed opportunities to cross-sell to high-value segments.</p>
+                    </div>
+
+                    <h2 class="project-section-heading" style="margin-top: 40px;">Solution</h2>
+                    <div class="project-description">
+                        <p>Built a comprehensive SQL-integrated analytical framework. By executing RFM (Recency, Frequency, Monetary Value) partitioning and K-Means clustering, the system classifies users into descriptive marketing profiles, supported by interactive stakeholder dashboards detailing trends and cohort retentions.</p>
+                    </div>
+
+                    <h2 class="project-section-heading" style="margin-top: 40px;">Methodology</h2>
+                    <div class="project-description">
+                        <p><strong>1. Database Ingestion & ETL:</strong> Modeled and imported transactional history schemas into a PostgreSQL database, setting indices and cleaning missing IDs with SQL queries.</p>
+                        <p><strong>2. RFM Segmentation:</strong> Grouped customers mathematically based on transaction recency, frequency of purchase, and monetary value, assigning numeric scores to define segments (e.g. Champions, Loyal, Hibernating).</p>
+                        <p><strong>3. Cluster Validation:</strong> Verified profiles in Python using Scikit-Learn's K-Means clustering, verifying group distances and optimizing clusters with Elbow and Silhouette plots.</p>
+                        <p><strong>4. Cohort Retention Analysis:</strong> Measured longitudinal behavioral change, tracing monthly user return rates to observe retention curves.</p>
+                        <p><strong>5. Dashboard Integration:</strong> Fed data pipelines directly into Power BI, designing dynamic filters, key performance indicators (KPIs), and CLV distribution curves.</p>
+                    </div>
+
+                    <h2 class="project-section-heading" style="margin-top: 40px;">Key Results</h2>
+                    <div class="project-description">
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 10px; position: relative; padding-left: 20px;"><span style="color: var(--color-accent); position: absolute; left: 0;">✔</span> Identified a "Champions" segment constituting 15% of the customer base but generating 45% of total revenue.</li>
+                            <li style="margin-bottom: 10px; position: relative; padding-left: 20px;"><span style="color: var(--color-accent); position: absolute; left: 0;">✔</span> Recommended product bundle strategies that proposed a 12% boost in general user retention.</li>
+                            <li style="margin-bottom: 10px; position: relative; padding-left: 20px;"><span style="color: var(--color-accent); position: absolute; left: 0;">✔</span> Reduced report aggregation processing cycles from weekly manual queries to an automated, live Power BI dashboard.</li>
+                        </ul>
+                    </div>
+
+                    <div class="software-row" style="margin-top: 40px;">
+                        <span class="software-label">TECHNOLOGIES USED</span>
+                        <div class="software-pills">
+                            <span class="software-pill">Python</span>
+                            <span class="software-pill">PostgreSQL</span>
+                            <span class="software-pill">SQL</span>
+                            <span class="software-pill">Power BI</span>
+                            <span class="software-pill">Pandas</span>
+                            <span class="software-pill">NumPy</span>
+                            <span class="software-pill">Matplotlib</span>
+                            <span class="software-pill">Seaborn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-right reveal-up delay-1">
+                    <ul class="project-meta-list" style="margin-bottom: 40px;">
+                        <li class="meta-item">
+                            <span class="meta-label">Category</span>
+                            <span class="meta-value">Data Analytics / BI</span>
+                        </li>
+                        <li class="meta-item">
+                            <span class="meta-label">Database Engine</span>
+                            <span class="meta-value">PostgreSQL</span>
+                        </li>
+                        <li class="meta-item">
+                            <span class="meta-label">Analytics Framework</span>
+                            <span class="meta-value">RFM & K-Means Clustering</span>
+                        </li>
+                        <li class="meta-item">
+                            <span class="meta-label">Visualisation Tool</span>
+                            <span class="meta-value">Power BI</span>
+                        </li>
+                    </ul>
+
+                    <div class="project-actions" style="display: flex; gap: 15px; margin-bottom: 40px;">
+                        <a href="https://github.com/sammoses26" target="_blank" class="pill-btn" style="flex: 1; text-align: center; justify-content: center;">GitHub Repository</a>
+                        <a href="#" class="pill-btn outline" style="flex: 1; text-align: center; justify-content: center; color: white; border-color: white;">Dashboard Link</a>
+                    </div>
+
+                    <h3 style="font-size: 11px; letter-spacing: 2px; color: var(--color-accent); text-transform: uppercase; margin-bottom: 15px;">Analytics Pipeline</h3>
+                    <div class="gallery-grid" style="grid-template-columns: 1fr; gap: 20px;">
+                        <div class="gallery-item reveal-up" onclick="openLightbox(0)">
+                            <img src="../images/ecommerce_analytics_arch.png" alt="Analytics Data Pipeline Diagram">
+                        </div>
+                        <div class="gallery-item reveal-up" onclick="openLightbox(1)">
+                            <img src="../images/ecommerce_customer_analytics.png" alt="Cohort Dashboard Overview">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="next-project-footer">
+        <div class="container">
+            <a href="risk-classification.html" class="next-project-link reveal-up">
+                <div class="next-content">
+                    <span class="next-label">Next Project</span>
+                    <h3 class="next-title">Credit Risk Classification</h3>
+                </div>
+                <div class="next-arrow">→</div>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Lightbox container -->
+    <div id="lightbox">
+        <img id="lightbox-img" style="max-width:85vw; max-height:88vh; object-fit:contain; border-radius:4px; display:block;">
+        <button id="lb-prev" style="position:absolute; left:20px; top:50%; transform:translateY(-50%); background:none; border:none; color:white; font-size:48px; cursor:pointer; opacity:0.7; line-height:1;">&#8592;</button>
+        <button id="lb-next" style="position:absolute; right:20px; top:50%; transform:translateY(-50%); background:none; border:none; color:white; font-size:48px; cursor:pointer; opacity:0.7; line-height:1;">&#8594;</button>
+        <button id="lb-close" style="position:absolute; top:20px; right:24px; background:none; border:none; color:white; font-size:32px; cursor:pointer; opacity:0.7; line-height:1;">&#10005;</button>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+    <script>
+        const galleryImages = [
+            '../images/ecommerce_analytics_arch.png',
+            '../images/ecommerce_customer_analytics.png'
+        ];
+        let currentIdx = 0;
+        function openLightbox(idx) {
+            currentIdx = idx;
+            const lb = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = galleryImages[idx];
+            lb.style.display = 'flex';
+            setTimeout(() => lb.classList.add('active'), 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lb = document.getElementById('lightbox');
+            lb.classList.remove('active');
+            setTimeout(() => {
+                lb.style.display = 'none';
+                document.body.style.overflow = '';
+            }, 300);
+        }
+
+        function nextImage() { currentIdx = (currentIdx + 1) % galleryImages.length; document.getElementById('lightbox-img').src = galleryImages[currentIdx]; }
+        function prevImage() { currentIdx = (currentIdx - 1 + galleryImages.length) % galleryImages.length; document.getElementById('lightbox-img').src = galleryImages[currentIdx]; }
+        document.getElementById('lb-close').onclick = closeLightbox;
+        document.getElementById('lb-next').onclick = (e) => { e.stopPropagation(); nextImage(); };
+        document.getElementById('lb-prev').onclick = (e) => { e.stopPropagation(); prevImage(); };
+        document.getElementById('lightbox').onclick = closeLightbox;
+    </script>
+</body>
+</html>

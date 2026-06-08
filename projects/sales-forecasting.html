@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Forecasting Dashboard | Sam Moses Kumar</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Advanced time-series forecasting pipeline using ARIMA/Prophet and interactive Power BI dashboards.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+</head>
+<body class="dark-mode-enforced project-page">
+
+    <header class="project-hero reveal-up" style="background: linear-gradient(180deg, rgba(17, 17, 16, 0.4) 0%, rgba(10, 10, 9, 0.95) 100%), url('../images/sales_forecasting_dashboard.png') no-repeat center center; background-size: cover;">
+        <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+        <div class="hero-content">
+            <span class="project-category">Forecasting • Data Science</span>
+            <h1 class="project-hero-title">Sales Forecasting Dashboard</h1>
+            <p class="project-hero-sub">Advanced time-series forecasting and interactive sales trends dashboard.</p>
+        </div>
+    </header>
+
+    <section class="project-details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="details-left reveal-up">
+                    <h2 class="project-section-heading">Business Problem</h2>
+                    <div class="project-description">
+                        <p>Retailers and businesses struggle to anticipate product demand, leading to stockouts of popular items or bloated inventories of low-demand categories. This mismatch leads to lost revenue, elevated warehousing costs, and operational inefficiencies.</p>
+                    </div>
+
+                    <h2 class="project-section-heading" style="margin-top: 40px;">Solution</h2>
+                    <div class="project-description">
+                        <p>Developed a time-series forecasting engine utilizing Python modeling libraries, displaying projections and historical trends within a Power BI dashboard. This framework helps supply chain planners evaluate weekly and monthly sales projections to align purchase orders.</p>
+                    </div>
+
+                    <h2 class="project-section-heading" style="margin-top: 40px;">Methodology</h2>
+                    <div class="project-description">
+                        <p><strong>1. Data Processing & Stationarity Testing:</strong> Extracted historical sales volumes, aggregated timelines, and tested stationarity using the Augmented Dickey-Fuller (ADF) test to apply log differentials where required.</p>
+                        <p><strong>2. Model Selection & Fitting:</strong> Built and compared statsmodels ARIMA, seasonal SARIMAX, and Prophet. Selected the best estimator based on minimizing AIC/BIC values and cross-validation errors.</p>
+                        <p><strong>3. Inference Pipeline:</strong> Set up a script to generate 12-month future forecasts, outputting expected values alongside 95% confidence intervals to represent forecasting uncertainties.</p>
+                        <p><strong>4. Power BI Dashboard Integration:</strong> Fed model outputs into Power BI, designing product category filters, historical trends comparisons, and forecast interval overlays.</p>
+                    </div>
+
+                    <h2 class="project-section-heading" style="margin-top: 40px;">Key Results</h2>
+                    <div class="project-description">
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 10px; position: relative; padding-left: 20px;"><span style="color: var(--color-accent); position: absolute; left: 0;">✔</span> Achieved a Mean Absolute Percentage Error (MAPE) of under 8.5% across primary product classes.</li>
+                            <li style="margin-bottom: 10px; position: relative; padding-left: 20px;"><span style="color: var(--color-accent); position: absolute; left: 0;">✔</span> Enabled demand planners to optimize inventory, proposing a reduction in overstock by up to 18%.</li>
+                            <li style="margin-bottom: 10px; position: relative; padding-left: 20px;"><span style="color: var(--color-accent); position: absolute; left: 0;">✔</span> Delivered interactive dashboards that dynamically refresh, replacing manual spreadsheet macros.</li>
+                        </ul>
+                    </div>
+
+                    <div class="software-row" style="margin-top: 40px;">
+                        <span class="software-label">TECHNOLOGIES USED</span>
+                        <div class="software-pills">
+                            <span class="software-pill">Python</span>
+                            <span class="software-pill">Power BI</span>
+                            <span class="software-pill">Time Series</span>
+                            <span class="software-pill">statsmodels</span>
+                            <span class="software-pill">Prophet</span>
+                            <span class="software-pill">Pandas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-right reveal-up delay-1">
+                    <ul class="project-meta-list" style="margin-bottom: 40px;">
+                        <li class="meta-item">
+                            <span class="meta-label">Category</span>
+                            <span class="meta-value">Time-Series / Data Science</span>
+                        </li>
+                        <li class="meta-item">
+                            <span class="meta-label">Visualisation Tool</span>
+                            <span class="meta-value">Power BI</span>
+                        </li>
+                        <li class="meta-item">
+                            <span class="meta-label">Model Framework</span>
+                            <span class="meta-value">ARIMA / Prophet</span>
+                        </li>
+                        <li class="meta-item">
+                            <span class="meta-label">Key Metric</span>
+                            <span class="meta-value">MAPE &lt; 8.5%</span>
+                        </li>
+                    </ul>
+
+                    <div class="project-actions" style="display: flex; gap: 15px; margin-bottom: 40px;">
+                        <a href="https://github.com/sammoses26" target="_blank" class="pill-btn" style="flex: 1; text-align: center; justify-content: center;">GitHub Repository</a>
+                        <a href="#" class="pill-btn outline" style="flex: 1; text-align: center; justify-content: center; color: white; border-color: white;">Dashboard Link</a>
+                    </div>
+
+                    <h3 style="font-size: 11px; letter-spacing: 2px; color: var(--color-accent); text-transform: uppercase; margin-bottom: 15px;">System Diagram</h3>
+                    <div class="gallery-grid" style="grid-template-columns: 1fr; gap: 20px;">
+                        <div class="gallery-item reveal-up" onclick="openLightbox(0)">
+                            <img src="../images/sales_forecasting_arch.png" alt="Time-Series Forecasting Architecture">
+                        </div>
+                        <div class="gallery-item reveal-up" onclick="openLightbox(1)">
+                            <img src="../images/sales_forecasting_dashboard.png" alt="Forecasting Dashboard Layout">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="next-project-footer">
+        <div class="container">
+            <a href="student-performance.html" class="next-project-link reveal-up">
+                <div class="next-content">
+                    <span class="next-label">Next Project</span>
+                    <h3 class="next-title">Student Performance Prediction Platform</h3>
+                </div>
+                <div class="next-arrow">→</div>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Lightbox container -->
+    <div id="lightbox">
+        <img id="lightbox-img" style="max-width:85vw; max-height:88vh; object-fit:contain; border-radius:4px; display:block;">
+        <button id="lb-prev" style="position:absolute; left:20px; top:50%; transform:translateY(-50%); background:none; border:none; color:white; font-size:48px; cursor:pointer; opacity:0.7; line-height:1;">&#8592;</button>
+        <button id="lb-next" style="position:absolute; right:20px; top:50%; transform:translateY(-50%); background:none; border:none; color:white; font-size:48px; cursor:pointer; opacity:0.7; line-height:1;">&#8594;</button>
+        <button id="lb-close" style="position:absolute; top:20px; right:24px; background:none; border:none; color:white; font-size:32px; cursor:pointer; opacity:0.7; line-height:1;">&#10005;</button>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+    <script>
+        const galleryImages = [
+            '../images/sales_forecasting_arch.png',
+            '../images/sales_forecasting_dashboard.png'
+        ];
+        let currentIdx = 0;
+        function openLightbox(idx) {
+            currentIdx = idx;
+            const lb = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = galleryImages[idx];
+            lb.style.display = 'flex';
+            setTimeout(() => lb.classList.add('active'), 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lb = document.getElementById('lightbox');
+            lb.classList.remove('active');
+            setTimeout(() => {
+                lb.style.display = 'none';
+                document.body.style.overflow = '';
+            }, 300);
+        }
+
+        function nextImage() { currentIdx = (currentIdx + 1) % galleryImages.length; document.getElementById('lightbox-img').src = galleryImages[currentIdx]; }
+        function prevImage() { currentIdx = (currentIdx - 1 + galleryImages.length) % galleryImages.length; document.getElementById('lightbox-img').src = galleryImages[currentIdx]; }
+        document.getElementById('lb-close').onclick = closeLightbox;
+        document.getElementById('lb-next').onclick = (e) => { e.stopPropagation(); nextImage(); };
+        document.getElementById('lb-prev').onclick = (e) => { e.stopPropagation(); prevImage(); };
+        document.getElementById('lightbox').onclick = closeLightbox;
+    </script>
+</body>
+</html>
