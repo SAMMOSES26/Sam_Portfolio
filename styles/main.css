@@ -21,9 +21,22 @@ img, video {
 }
 html { 
     scroll-behavior: smooth; 
-    background: url('../images/project2-thumb.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #0b0f17; /* Fallback dark background */
 }
+
+/* Fixed background image container to bypass iOS Safari background-attachment: fixed bug */
+html::before {
+    content: "";
+    position: fixed;
+    inset: -50px; /* Expand slightly to hide blur artifacts at screen edges */
+    background: url('../images/project2-thumb.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(30px) saturate(1.4);
+    -webkit-filter: blur(30px) saturate(1.4);
+    z-index: -2;
+    pointer-events: none;
+}
+
 body {
     font-family: var(--font-primary), -apple-system, sans-serif;
     background-color: transparent; /* Allow html background to show through */
@@ -40,8 +53,6 @@ body::before {
     position: fixed;
     inset: 0;
     background: rgba(10, 10, 9, 0.55);
-    backdrop-filter: blur(30px) saturate(1.4);
-    -webkit-backdrop-filter: blur(30px) saturate(1.4);
     z-index: -1;
 }
 
